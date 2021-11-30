@@ -78,7 +78,7 @@ namespace SebUzduotisApi.Controllers
                     return NotFound(string.Format("BaseRateCode '{0}' is not found", newAgreement.BaseRateCode));
                 }
                 var newBaseRateVilibRate = GetLatestVilibRate(newBaseRate.BaseRateCode);
-                if (lastBaseRateVilibRate == null)
+                if (newBaseRateVilibRate == null)
                 {
                     return Problem("Can't get LatestVilibRate value from server", null, null, "No LatestVilibRate value");
                 }
