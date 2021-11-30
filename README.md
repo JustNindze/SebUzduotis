@@ -42,10 +42,10 @@ Next step would be to create Web application which will use this API to write ne
    Body (new Agreement)
    ```
    {
-      "amount": 0,
-      "baseRateCode": "string",
-      "margin": 0,
-      "duration": 0
+      "amount": int,
+      "baseRateCode": string,
+      "margin": decimal,
+      "duration": int
    } 
    ```
 3. After request AddAgreementToUser method will write new Agreement to database and will return
